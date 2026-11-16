@@ -63,7 +63,8 @@
   .phase .meta { display: grid; grid-template-columns: 1fr 1fr 1fr; border-top: 1px solid #e3d3cb; border-bottom: 1px solid #e3d3cb; padding: 10px 0; font-size: .9rem; color: var(--muted); }
   .phase .meta span:nth-child(2) { text-align: center; }
   .phase .meta span:last-child { text-align: right; color: var(--rose); font-weight: 700; }
-  .hero .price { font-family: 'Josefin Sans', sans-serif; letter-spacing: .2em; text-transform: uppercase; font-size: .95rem; color: #f6d9da; margin-bottom: 1.2rem; }
+  .hero .price { font-family: 'Josefin Sans', sans-serif; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; font-size: .95rem; color: #fff; margin-bottom: 1.2rem; text-shadow: 0 1px 6px rgba(0,0,0,.45); }
+  .hero h1, .hero p { text-shadow: 0 2px 12px rgba(0,0,0,.35); }
   .hero .actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
   .divider { width: 60px; height: 2px; background: var(--blush); margin: 28px auto; }
@@ -129,6 +130,9 @@
     section { padding: 64px 0; }
     .wrap { padding: 0 16px; }
     .menu-btn { display: block; }
+    /* On phones the text sits higher on the photo, so darken more of it */
+    .hero::before { background: linear-gradient(to top, rgba(59,49,50,.88) 0%, rgba(59,49,50,.65) 55%, rgba(59,49,50,.3) 100%); }
+    .hero .price { font-size: .85rem; letter-spacing: .14em; }
     .nav ul { display: none; position: absolute; top: 76px; left: 0; right: 0; background: var(--cream); flex-direction: column; gap: 0; border-bottom: 1px solid #eadcd5; }
     .nav ul.open { display: flex; }
     .nav ul a { display: block; padding: 16px 20px; }
