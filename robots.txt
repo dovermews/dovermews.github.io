@@ -1,0 +1,3 @@
+# Preview only - remove when the site goes live on the real domain
+User-agent: *
+Disallow: /
