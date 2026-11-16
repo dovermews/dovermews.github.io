@@ -82,7 +82,7 @@
   .extras { font-size: .95rem; color: var(--muted); }
 
   /* Gallery */
-  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 260px; gap: 14px; margin-top: 2rem; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 260px; grid-auto-flow: dense; gap: 14px; margin-top: 2rem; }
   .gallery-grid button { border: 0; padding: 0; cursor: zoom-in; overflow: hidden; background: var(--sand); }
   .gallery-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
   .gallery-grid button:hover img { transform: scale(1.04); }
@@ -248,11 +248,12 @@
     <p class="gallery-note">A look inside homes already enjoyed at Dover Mews. These photos come from more than one owner's unit, so furniture, d&eacute;cor and finishes vary from home to home. Units are sold unfurnished.</p>
     <div class="gallery-grid">
       <button class="tall"><img src="images/patio.webp" alt="Main floor patio, furnished with dining table and lounge chairs"></button>
+      <button class="wide"><img src="images/living-room.jpg" alt="Living room looking through to the dining area and balcony"></button>
       <button class="wide"><img src="images/kitchen.jpg" alt="Styled kitchen with breakfast counter"></button>
       <button class="tall"><img src="images/bedroom-1.jpg" alt="Bedroom with white bed and pink throw"></button>
-      <button><img src="images/kitchen-2.jpg" alt="Styled kitchen with fridge and stove"></button>
-      <button><img src="images/foyer.jpg" alt="Foyer with console table"></button>
       <button class="tall"><img src="images/bedroom-2.jpg" alt="Bedroom in soft neutral tones"></button>
+      <button class="tall"><img src="images/foyer.jpg" alt="Foyer with console table"></button>
+      <button><img src="images/kitchen-2.jpg" alt="Styled kitchen with fridge and stove"></button>
       <button class="wide"><img src="images/bedroom-3.jpg" alt="Bedroom with wardrobe and green accents"></button>
     </div>
 
